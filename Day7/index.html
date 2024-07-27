@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Input Example</title>
+</head>
+<body>
+    <h1>Date Input Example</h1>
+    <form id="dateForm">
+        <label for="dateInput">Select a date:</label>
+        <input type="date" id="dateInput" name="dateInput">
+        <button type="submit">Get Year</button>
+    </form>
+    <p>Selected year: <span id="yearOutput"></span></p>
+
+    <script>
+        const dateForm = document.getElementById('dateForm');
+        const yearOutput = document.getElementById('yearOutput');
+
+        // Add a submit event listener to the form
+        dateForm.addEventListener('submit', function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Get the value from the date input
+            const dateValue = document.getElementById('dateInput').value;
+            
+            // Ensure that a date has been selected
+            if (dateValue) {
+                // Create a Date object from the date input value
+                const date = new Date(dateValue);
+                
+                // Get the year using getFullYear()
+                const year = date.getFullYear();
+                
+                // Display the extracted year
+                yearOutput.textContent = year;
+            } else {
+                // Handle case where no date is selected
+                yearOutput.textContent = "Please select a date.";
+            }
+        });
+    </script>
+</body>
+</html>

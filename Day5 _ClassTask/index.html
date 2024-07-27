@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Example</title>
+</head>
+<body>
+    <h1 id="title">Hello, World!</h1>
+    <button id="changeTextButton">Change Text</button>
+
+    <script>
+        // Access the DOM elements
+        const titleElement = document.getElementById('title');
+        const buttonElement = document.getElementById('changeTextButton');
+
+        // Function to change the text of the title
+        function changeText() {
+            titleElement.textContent = 'Hello, DOM!';
+        }
+
+        // Attach an event listener to the button
+        buttonElement.addEventListener('click', changeText);
+    </script>
+</body>
+</html>
