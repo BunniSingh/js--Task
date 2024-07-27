@@ -19,7 +19,7 @@ console.log(getAge);
 btn.addEventListener("click", function(event){
     event.preventDefault();
     if(dob.value){
-        result.innerText = `You are ${getAge} years old Mere Pyare Bubu 🌞`;
+        result.innerText = `You are ${getAge} years old🌞`;
     }else{
         result.innerText = "Please Enter Your Date of Birth ���";
     }
