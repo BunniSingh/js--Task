@@ -18,4 +18,4 @@ To run this project locally:
 1. **Clone the Repository:**
 
    ```bash
-   git clone [Your GitHub Repository Link Here]
+   git clone [https://github.com/BunniSingh/js--Task/tree/main/counter_aap]
