@@ -3,55 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom Project-1</title>
-    <style>
-        .container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-
-        }
-        .child-container{
-            width: 80%;
-            height: 50%;
-            margin: 0 auto;
-            padding: 20px;
-            /* border: 1px solid black; */
-            text-align: center;
-            background-color: #f1f1f1;
-            font-family: Arial, sans-serif;
-            box-shadow: 8px 0 45px 5px rgba(98, 98, 98, 0.4);
-        }
-    </style>
+    <title>Interactive Article Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="child-container">
-            This is the child-container.
+    <header>
+        <div class="container">
+            <h1>Interesting Article</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <div class="container">
-        <div class="child-container">
-            This is the child-container.
-        </div>
-    </div>
-    <div class="container">
-        <div class="child-container">
-            This is the child-container.
-        </div>
-    </div>
-    <div class="container">
-        <div class="child-container">
-            This is the child-container.
-        </div>
-    </div>
-    <div class="container">
-        <div class="child-container">
-            This is the child-container.
-        </div>
-    </div>
+    </header>
 
-    <script src="./script.js"></script>
+    <main>
+        <div class="container">
+            <article>
+                <img src="https://via.placeholder.com/800x400" alt="Article Image">
+                <h2>The Art of Simplicity</h2>
+                <p class="date">Published on July 30, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Vivamus a arcu in neque sollicitudin aliquet. Phasellus eget diam lacus. Sed in metus placerat, hendrerit purus vel, tincidunt ligula.</p>
+                <p>Mauris ut lacus ac nisl interdum elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque et velit nec augue tincidunt convallis.</p>
+                <blockquote>
+                    "Simplicity is the ultimate sophistication." – Leonardo da Vinci
+                </blockquote>
+                <p>Aenean et felis nec ipsum efficitur facilisis. Curabitur lacinia, libero non bibendum aliquet, nisl augue fermentum arcu, vel efficitur odio neque non massa. In eu arcu sed leo interdum facilisis.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Interesting Article. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="#">Twitter</a> |
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
