@@ -10,6 +10,29 @@ body {
     transition: background-color 0.3s ease;
 }
 
+#mode{
+    width: 100px;
+    padding: 5px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    color: #495057;
+    appearance: none; /* Removes default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.293 7.707a1 1 0 011.414 0L10 11.086l3.293-3.379a1 1 0 111.414 1.414l-4 4.086a1 1 0 01-1.414 0l-4-4.086a1 1 0 010-1.414z" fill="%23495057"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+*:has(option[value="dark"]:checked){
+    /* --background: black;
+    --text-color: white; */
+    background-color: black;
+    color: white;
+}
+
 .container {
     width: 80%;
     max-width: 1000px;

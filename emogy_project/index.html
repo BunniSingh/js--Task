@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emogy_Project</title>
+    <link rel="stylesheet" href="styels.css">
 </head>
 <body>
     <div class="container">
         <h1>Emojee - Emoji 🔍 Application</h1>
-        <hr>
+        <div class="hr-line"></div>
         <form id="searchForm">
             <input type="text" id="searchInput" placeholder="emojis Search...">
-            <button type="submit">Search</button>
-            <br>
-            <table>
-
-            </table>
         </form>
+        
+        <table>
+            <tbody id="emoje-container"></tbody>
+        </table>
     </div>
+
+    <script src="./emojee.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -2,8 +2,6 @@ let decreasing = document.getElementById('decrease');
 let inputval = document.getElementById('counter');
 let increasing = document.getElementById('increase');
 
-console.log(decreasing, increasing, inputval);
-
 let counter = 1;
 inputval.value = counter;
 decreasing.addEventListener('click', () =>{
@@ -17,12 +15,13 @@ increasing.addEventListener('click', () => {
     inputval.value = counter;
 });
 
-inputval.addEventListener('keypress', (e) => {
-    if (!isNaN(e.key)) {
-        setTimeout(() => { 
-            counter = parseInt(inputval.value, 10); 
-            console.log(counter); 
-        }, 0);
+inputval.addEventListener('keyup', (e) => {
+    if (!isNaN(e.target.value)) {
+        // setTimeout(() => { 
+        //     counter = parseInt(inputval.value); 
+        //     console.log(counter); 
+        // }, 0);
+        counter = parseInt(inputval.value);
     }else{
         e.preventDefault();
         alert('Please enter Valid Number');
