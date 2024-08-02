@@ -3,53 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Article Page</title>
+    <title>Key and KeyCode Display</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Interesting Article</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <select name="mode" id="mode">
-                        <option value="light">Light Mode🌞</option>
-                        <option value="dark">Dark Mode🌚</option>
-                      </select>
-                </ul>
-            </nav>
+    <div class="container">
+        <div class="store-content">
+            <div id="keyName">Press any key</div>
+            <div id="keyCode">0</div>
         </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <article>
-                <img src="https://via.placeholder.com/800x400" alt="Article Image">
-                <h2>The Art of Simplicity</h2>
-                <p class="date">Published on July 30, 2024</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Vivamus a arcu in neque sollicitudin aliquet. Phasellus eget diam lacus. Sed in metus placerat, hendrerit purus vel, tincidunt ligula.</p>
-                <p>Mauris ut lacus ac nisl interdum elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque et velit nec augue tincidunt convallis.</p>
-                <blockquote>
-                    "Simplicity is the ultimate sophistication." – Leonardo da Vinci
-                </blockquote>
-                <p>Aenean et felis nec ipsum efficitur facilisis. Curabitur lacinia, libero non bibendum aliquet, nisl augue fermentum arcu, vel efficitur odio neque non massa. In eu arcu sed leo interdum facilisis.</p>
-            </article>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Interesting Article. All rights reserved.</p>
-            <p>Follow us on:
-                <a href="#">Twitter</a> |
-                <a href="#">Facebook</a> |
-                <a href="#">Instagram</a>
-            </p>
-        </div>
-    </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,41 +1,29 @@
-// console.log(document);
-// let container = document.querySelectorAll('.container');
+document.addEventListener('keydown', function(event) {
+    // Create an array to hold pressed modifier keys
+    const modifiers = [];
 
-// console.log(container);
-// let newElement = document.createElement('div');
-// newElement.setAttribute('class', 'create-container');
+    // Check for modifier keys and add them to the array
+    if (event.ctrlKey && event.key !== 'Control') modifiers.push('Ctrl');
+    if (event.altKey && event.key !== 'Alt') modifiers.push('Alt');
+    if (event.shiftKey && event.key !== 'Shift') modifiers.push('Shift');
+    if (event.metaKey && event.key !== 'Meta') modifiers.push('Meta'); // for Mac command key
 
+    // Determine the key description using if-else
+    console.log(modifiers);
+    let keyDescription;
+    if (modifiers.length > 0) {
+        keyDescription = `${modifiers.join(' + ')} + ${event.key}`;
+        
+    } else {
+        keyDescription = `Key: ${event.key}`;
+    }
 
-// newElement.innerText = "This is a dinamically Created Element";
+    // Remove the redundant modifier key description
+    // if (modifiers.includes(event.key)) {
+    //     keyDescription = `Key: ${event.key}`;
+    // }
 
-// container.forEach(ele => {
-//     ele.appendChild(newElement);
-// })
-
-
-// let val = "foo";
-// (function() {
-//     console.log("This old " + val);
-//     // let val = "bar";
-//     console.log("This new " + val);
-// })();
-
-// console.log(y);
-// y = 1;
-// console.log(y);
-// var y = 2;
-
-// y = 3;
-// console.log(y);
-// var y;
-
-// var val = 2;
-// let val;
-// console.log(val);
-
-function foo() {
-    console.log("Hello from foo" + y);
-}
-console.log("global foo" + y);
-var y = 1;
-foo();
+    // Update the display with key and keycode information
+    document.getElementById('keyName').textContent = keyDescription;
+    document.getElementById('keyCode').textContent = `KeyCode: ${event.keyCode}`;
+});
