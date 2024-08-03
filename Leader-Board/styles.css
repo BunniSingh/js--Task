@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #6e8d93d2;
+}
+
+h1 {
+    background: linear-gradient(to right, red, blue);
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 1rem;
+    border-bottom: 1px solid #e47417d2;
+}
+
+input {
+    min-width: 100px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+#btn {
+    background-color: #e47417d2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    margin: 10px;
+}
+
+#btn:hover {
+    color: #f8901d;
+    background-color: #fff;
+    border: 1px solid #e47417d2;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    overflow: auto;
+}
+
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 8px rgb(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 80%;
+    padding: 1rem;
+    height: 70px;
+    background-color: rgb(4 44 54 / 32%);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.name #playerName {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffaf69d2;
+}
+
+.name .date {
+    font-size: 15px;
+}
+
+button {
+    background-color: #e47417d2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    margin: 5px;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    color: #f8901d;
+    background-color: #fff;
+    border: 1px solid #e47417d2;
+}
+
+button:active {
+    background-color: #f8901d;
+    color: #fff;
+    border: 1px solid #e47417d2;
+}
+
+button:focus {
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.details.remove-animation {
+    animation: slideOut 0.5s forwards;
+}
+
+.playerScore.updated {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 699px) {
+    .section1 {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 599px) {
+    .section1 {
+        flex-direction: column;
+    }
+
+    input,
+    #btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .details {
+        width: 100%;
+        justify-content: space-between;
+        font-size: 14px;
+        height: auto;
+    }
+    .details p {
+        margin: 0 5px;
+    }
+    .name {
+        width: 30%;
+    }
+    button {
+        padding: 10px 8px;
+        font-size: 14px;
+        margin: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.alert {
+    color: red;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
