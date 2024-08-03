@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-to-Cart</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 4rem;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button{
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .showPassword{
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Password generator</h1>
+    <div class="container">
+        <p class="showPassword"></p>
+        <button id="btn" onclick="createPassord()">Generate Password</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
