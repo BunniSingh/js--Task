@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stacky-Note</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="main-container">
         <div id="left-container">
-            <div>
-                <textarea name="textarea" id="text-area" rows="10" cols="30"></textarea>
-                <input type="color" id="color">
+            <h1>Write your Note here...</h1>
+            <textarea name="textarea" id="text-area"></textarea>
+            <div id="type-box">
+                <input type="color" id="color" value="#abe1e3">
+                <button id="btn">Add None</button>
+            </div>
+        </div>
+
+        <div id="right-container">
+            <h1>Your Note</h1>
+            <div class="notes-container">
+                <div id="note-feed">
+                    <p>You have not added a node!!!</p>
+                </div>
+                
             </div>
         </div>
     </div>
+
+    <p class="text-note"></p>
+    <p class="close-btn"></p>
+
+    <script src="./static.js"></script>
 </body>
 </html>

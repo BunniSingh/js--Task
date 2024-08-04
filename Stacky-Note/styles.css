@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+h1{
+    color: #fe0a20;
+}
+#left-container{
+    width: 50%;
+    height: 100vh;
+    background-color: #d4ced4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* box-shadow: 2px 2px 10px rgba(224, 21, 21, 0.3); */
+}
+
+
+textarea{
+    font-size: 1.2rem;
+    width: 100%;
+    height: 300px;
+    resize: vertical;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.6);
+
+}
+
+#type-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+input[type="color"]{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.6);
+
+}
+#btn{
+    /* background-color: #fe0a20; */
+    background: linear-gradient(to right, rgba(0, 255, 0, 0.9),rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.6);
+
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    width: 150px;
+    
+    &:hover{
+        background-color: #cc0718;
+    }
+}
+
+
+
+#right-container{
+    width: 50%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    /* box-shadow: 2px 2px 10px rgba(224, 21, 21, 0.3); */
+    h1{
+        text-align: center;
+    }
+
+    .notes-container{
+        /* height: 100vh; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        overflow: auto;
+        /* align-items: center; */
+    }
+    .note-container{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 10px;
+
+        button{
+            height: 22px;
+            color: #ffffff;
+            background-color: transparent;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #fe0a20;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.6);
+            }
+        }
+        
+        
+    }
+    .text-note{
+        width: 150px;
+        height: 100px;
+        text-wrap: wrap;
+    }
+}
+

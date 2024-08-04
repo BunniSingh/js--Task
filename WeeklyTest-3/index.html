@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add-to-Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    
+    <h1>Add-to-Cart</h1>
+    <div class="container">
+        <div class="section1">
+            <h2>Product</h2>
+            <div class="product">
+                <p class="produName">Product1</p>
+                <p class="produPrice">100</p>
+                <div class="quentity">
+                    <button class="minus">-</button>
+                    <input type="number" value="1" min="1" max="10">
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <p class="produName">Product2</p>
+                <p class="produPrice">200</p>
+                <div class="quentity">
+                    <button class="minus">-</button>
+                    <input type="number" value="1" min="1" max="10">
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <p class="produName">Product3</p>
+                <p class="produPrice">300</p>
+                <div class="quentity">
+                    <button class="minus">-</button>
+                    <input type="number" value="1" min="1" max="10">
+                    <button class="plus">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section2">
+            <h2>Cart</h2>
+            <div class="produList">
+                <div class="item">
+                    <p class="produName">Product1</p>
+                    <p class="quentity">1</p>
+                    <p class="produPrice">100</p>
+                    <button class="remove"><i class="fa-regular fa-trash-can"></i></button>
+                </div>
+                <div class="item">
+                    <p class="produName">Product2</p>
+                    <p class="quentity">2</p>
+                    <p class="produPrice">100</p>
+                    <button class="remove"><i class="fa-regular fa-trash-can"></i></button>
+                </div>
+                <div class="item">
+                    <p class="produName">Product1</p>
+                    <p class="quentity">1</p>
+                    <p class="produPrice">100</p>
+                    <button class="remove"><i class="fa-regular fa-trash-can"></i></button>
+                </div>
+            </div>
+            <div class="total">
+                <p>Total Price:</p>
+                <p> $600</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
