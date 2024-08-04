@@ -12,9 +12,6 @@ function activeData(){
     let section = document.querySelectorAll('.details');
     section.forEach(function(item , index){
         item.addEventListener('click', (event) => {
-            // console.log(event);
-            // console.log(event.target.className);
-            // console.log(event.target.className === "remove");
             if(event.target.className === "remove" || event.target.className === "fa-solid fa-trash-can"){
                 data.splice(index, 1);
                 updateDataUi();
