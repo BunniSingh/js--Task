@@ -43,6 +43,8 @@ button{
     justify-content: center;
     gap: 10px;
     overflow-y: auto;
+    padding-top: 1rem;
+    
 
 
     .bgColor{
@@ -55,5 +57,38 @@ button{
         border-radius: 10px;
         font-size: large;
         font-weight: bolder;
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.05);
+            /* z-index: 3; */
+        }
     }
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Green background for success */
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.3s;
+    font-size: 16px;
+}
+
+.notification.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
 }

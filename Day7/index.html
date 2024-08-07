@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key and KeyCode Display</title>
+    <title>Copy Text on Click</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="store-content">
-            <div id="keyName">Press any key</div>
-            <div id="keyCode">0</div>
-        </div>
+    <div class="box" id="box1">Text to Copy 1</div>
+    <div class="box" id="box2">Text to Copy 2</div>
+    <div class="box" id="box3">Text to Copy 3</div>
+
+    <!-- Notification Pop-up -->
+    <div id="notification" class="notification hidden">
+        <span id="notification-text"></span>
+        <i class="fas fa-check-circle"></i>
     </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

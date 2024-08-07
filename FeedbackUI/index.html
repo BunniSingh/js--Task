@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-UI!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback-UI!</h1>
+        <div class="feedback-rating">
+            <div  id="Unhappy" class="rating">
+                <img src="https://cdn-icons-png.flaticon.com/512/166/166527.png" alt="unhappy-face">
+                <p>Unhappy</p>
+            </div>
+            <div id="Natural" class="rating">
+                <img src="https://cdn-icons-png.flaticon.com/512/1791/1791385.png" alt="natural-face">
+                <p>Natural</p>
+            </div>
+            <div id="Happy" class="rating">
+                <img src="https://cdn-icons-png.flaticon.com/512/166/166538.png" alt="happy-face">
+                <p>Happy</p>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button id="btn">Send Review</button>
+        </div>
+    </div>
+
+    <div class="feedback-container" style="display:none;">
+        <div>
+            <h2>Thank you!</h2>
+            <p>Your feedback has been submitted successfully.</p>
+        </div>
+        <div class="responce">
+            Feedback: 
+            <strong id="selectRating"></strong>
+        </div>
+        <p>We'll use your feedback to improve our customer support.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

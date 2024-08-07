@@ -95,7 +95,7 @@ h1{
 .product-list{
     width: 100%;
 }
-.item{
+.item1, .item2, .item3{
     width: 100%;
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@ h1{
     /* border: 2px solid #049c5a9b; */
 }
 
-.remove{
+#remove1,#remove2,#remove3{
     padding: 8px 10px;
         border: none;
         border-radius: 5px;

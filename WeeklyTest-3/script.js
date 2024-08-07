@@ -87,6 +87,11 @@ let counter1 = 0;
 let counter2 = 0;
 let counter3 = 0;
 
+function removeElementFromCart(){
+
+}
+
+    
 quentity.forEach(ele =>{
     ele.addEventListener('click', (e)=>{
         let btn_id = e.target.id;
@@ -116,29 +121,40 @@ quentity.forEach(ele =>{
         }
         productList.innerHTML = "";
         if(counter1 > 0){
-            productList.innerHTML += `<div class="item">
+            productList.innerHTML += `<div class="item1">
                      <p class="produName">product1</p>
-                     <p class="noumberOfUnit">${counter1}</p>
-                    <p class="produPrice">100</p>
-                    <button class="remove"><i class="fa-regular fa-trash-can"></i></button>
+                     <div>
+                        <span class="noumberOfUnit">${counter1}</span>
+                        <span>x</span>
+                        <span class="produPrice">100</p>
+                     </div>
+                    <button id="remove1"><i class="fa-regular fa-trash-can"></i></button>
                     </div>`
         }
         if(counter2 > 0){
-            productList.innerHTML += `<div class="item">
+            productList.innerHTML += `<div class="item2">
                      <p class="produName">product2</p>
-                     <p class="noumberOfUnit">${counter2}</p>
-                    <p class="produPrice">200</p>
-                    <button class="remove"><i class="fa-regular fa-trash-can"></i></button>
+                     <div>
+                        <span class="noumberOfUnit">${counter2}</span>
+                        <span>x</span>
+                        <span class="produPrice">200</p>
+                     </div>
+                    <button id="remove2"><i class="fa-regular fa-trash-can"></i></button>
                     </div>`
+                    
         }
         if(counter3 > 0){
-            productList.innerHTML += `<div class="item">
+            productList.innerHTML += `<div class="item3">
                      <p class="produName">product3</p>
-                     <p class="noumberOfUnit">${counter3}</p>
-                    <p class="produPrice">300</p>
-                    <button class="remove"><i class="fa-regular fa-trash-can"></i></button>
+                     <div>
+                        <span class="noumberOfUnit">${counter3}</span>
+                        <span>x</span>
+                        <span class="produPrice">300</p>
+                     </div>
+                    <button id="remove3"><i class="fa-regular fa-trash-can"></i></button>
                     </div>`
         }
+
 
 
         if(counter1 > 0 || counter2 > 0 || counter3 > 0){
@@ -149,5 +165,8 @@ quentity.forEach(ele =>{
         }else{
             total.innerHTML = `<h3>No product added to the cart</h3>`
         }
+        
     })
 })
+
+

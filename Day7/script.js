@@ -1,29 +1,38 @@
-document.addEventListener('keydown', function(event) {
-    // Create an array to hold pressed modifier keys
-    const modifiers = [];
+// Select all elements with the class 'box'
+const boxes = document.querySelectorAll('.box');
 
-    // Check for modifier keys and add them to the array
-    if (event.ctrlKey && event.key !== 'Control') modifiers.push('Ctrl');
-    if (event.altKey && event.key !== 'Alt') modifiers.push('Alt');
-    if (event.shiftKey && event.key !== 'Shift') modifiers.push('Shift');
-    if (event.metaKey && event.key !== 'Meta') modifiers.push('Meta'); // for Mac command key
+// Select the notification element and text span
+const notification = document.getElementById('notification');
+const notificationText = document.getElementById('notification-text');
 
-    // Determine the key description using if-else
-    console.log(modifiers);
-    let keyDescription;
-    if (modifiers.length > 0) {
-        keyDescription = `${modifiers.join(' + ')} + ${event.key}`;
-        
-    } else {
-        keyDescription = `Key: ${event.key}`;
-    }
+// Function to show notification
+function showNotification(message) {
+    notificationText.textContent = message;
+    notification.classList.remove('hidden');
+    notification.classList.add('visible');
 
-    // Remove the redundant modifier key description
-    // if (modifiers.includes(event.key)) {
-    //     keyDescription = `Key: ${event.key}`;
-    // }
+    // Hide the notification after 3 seconds
+    setTimeout(() => {
+        notification.classList.remove('visible');
+        notification.classList.add('hidden');
+    }, 3000);
+}
 
-    // Update the display with key and keycode information
-    document.getElementById('keyName').textContent = keyDescription;
-    document.getElementById('keyCode').textContent = `KeyCode: ${event.keyCode}`;
+// Add a click event listener to each box
+boxes.forEach(box => {
+    box.addEventListener('click', () => {
+        // Get the text content of the clicked box
+        const textToCopy = box.textContent;
+
+        // Use the Clipboard API to write the text to the clipboard
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                // Show a custom notification
+                showNotification(`Copied: "${textToCopy}"`);
+            })
+            .catch(err => {
+                // Handle errors if the text could not be copied
+                console.error('Failed to copy text: ', err);
+            });
+    });
 });
