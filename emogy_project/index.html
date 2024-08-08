@@ -11,14 +11,21 @@
         <h1>Emojee - Emoji 🔍 Application</h1>
         <div class="hr-line"></div>
         <form id="searchForm">
+            <button class="click-btn" id="all">All</button>
+            <button class="click-btn" id="face">Face</button>
+            <button class="click-btn" id="heart">Heart</button>
+            <button class="click-btn" id="hand">Hand</button>
+            <button class="click-btn" id="sport">Sports</button>
+            <button class="click-btn" id="flag">Flag</button>
             <input type="text" id="searchInput" placeholder="emojis Search...">
         </form>
         
-        <table>
-            <tbody id="emoje-container"></tbody>
-        </table>
     </div>
+    <div id="emoje-container"></div>
 
+    <div class="copyAlert" style="display: none;">
+    </div>
+    
     <script src="./emojee.js"></script>
     <script src="./script.js"></script>
 </body>

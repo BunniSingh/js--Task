@@ -16,15 +16,7 @@ document.querySelectorAll('.rating').forEach((box)=>{
     box.addEventListener('click', function(e){
         fleg = true;
         removebg();
-       if(box.id === "Unhappy"){
-         showRating(box.id, box);
-       }
-       else if(box.id === "Natural"){
-         showRating(box.id , box);
-       }
-       else if(box.id === "Happy"){
-         showRating(box.id , box);
-       }
+        showRating(box.id, box);
     })
 })
 
