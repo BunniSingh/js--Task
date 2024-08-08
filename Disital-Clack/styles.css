@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+    background: url('./pexels-pixabay-268533.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit:fill;
+}
+
+.container{
+    color: #dcdbdb;
+    text-align: center;
+    /* width: 400px; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 10px;
+}
+
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: linear-gradient(to right, blue, red);
+    background-clip: text;
+    color:transparent;
+}
+.clock-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.clock-digit{
+    font-size: 5rem;
+    /* font-size: 2rem; */
+    width:120px;
+    font-weight: bold;
+    text-align: center;
+    /* background-color: rgba(208, 189, 214, 0.5); */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+
+}
+
+.text{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* font-weight: bold; */
+    background-color: rgb(10 48 17 / 40%);
+    /* color: orangered; */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+#meridian{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    /* background-color: rgba(208, 189, 214, 0.5); */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    background-color: rgb(10 48 17 / 40%);
+    color: orangered;
+    align-self: self-end;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+
+.colon{
+    font-size: 4rem;
+    align-self: flex-start;
+    color: orangered;
+}
+
+.quote{
+    font-size: 2.5rem;
+    margin: 3rem;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    /* background-color: rgb(10 48 17 / 40%); */
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: linear-gradient(to right, blue, red);
+    background-clip: text;
+    color:transparent;
+}
+
+@media (max-width: 450px){
+    .container{
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .clock-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    #meridian{
+        margin-top: 2rem;
+        align-self: center;
+    }
+
+    .colon{
+        display: none;
+    }
+}
