@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gimini</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <h1>Gimini Search ✨</h1>
+    <div class="container">
+        <div class="input_container">
+            <input type="text" id="search-input" placeholder="Search Anything..." />
+            <button id="btn">Search</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div id="error"></div>
+        <div id="results"></div>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
