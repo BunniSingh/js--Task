@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get|Joke</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background:url("./pexels-danielabsi-952670.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+       .container {
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            gap: 15px;
+            flex-direction: column;
+            width: 70%;
+            min-width: 340px;
+            height: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            box-shadow: 0px 0 8px white;
+            background-color: rgba(255, 255, 255, 0.2);
+ 
+       }
+
+       h1{
+           background: linear-gradient(to right,white, rgb(237, 228, 46), red);
+           text-align: center;
+           background-clip: text;
+           color: transparent;
+           /* text-shadow: 0 2px 5px rgba(245, 245, 245, 0.5); */
+       }
+       button{
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transform: scale(1);
+        transition: all 0.3s ease;
+        font-size: large;
+        box-shadow: 0 2px 5px black;
+        &:hover{
+           transform: scale(1.05);
+        }
+       }
+
+       #jokeContainer{
+        margin-top: 20px;
+        font-size: 23px;
+        line-height: 1.5;
+        text-align: center;
+        color: #f7ffbc;
+        font-weight: bold;
+        overflow: auto;
+       }
+
+       @media (max-width: 500px){
+        .container{
+            width: 90%;
+            height: auto;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Get a Random Joke</h1>
+        <button id="getJokeBtn">Get Another Joke</button>
+        <div id="jokeContainer"></div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
