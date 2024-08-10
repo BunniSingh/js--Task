@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-Dog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+            color: darkred;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            align-content: space-between;
+            /* height: 100vh; */
+            padding: 1rem;
+            background-color: #f2f2f2;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+            text-align: center;
+
+            width: 80%;
+
+        }
+        
+        #dog-image-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            /* height: 300px; */
+            padding: 10px;
+            /* border: 2px solid black; */
+            z-index: 4;
+        }
+
+        
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: fit;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px black;
+            transition: transform 0.5s ease;
+            transform: scale(1);
+            box-sizing: border-box;
+            &:hover{
+                transform: scale(1.1);
+            }       
+        }
+
+
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            &:hover{
+                background-color: #3e8e41;
+            }
+        }
+        @media (max-width: 500px){
+            .container{
+                width: 100%;
+            }
+            #dog-image-container{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Dog Image</h1>
+        <div id="dog-image-container">
+            <img id="dog-image" src="" alt="">
+        </div>
+        <button onclick="getRandomDog()">Get Random Dog</button>
+    </div>
+    <script>
+        function getRandomDog(){
+            fetch('https://dog.ceo/api/breeds/image/random')
+           .then(response =>{
+                return response.json();
+           })
+           .then(data => {
+             console.log(data.message);
+                document.querySelector('#dog-image').src = data.message;
+            })
+           .catch(error => console.error('Error:', error));
+        }
+        getRandomDog();
+    </script>
+</body>
+</html>

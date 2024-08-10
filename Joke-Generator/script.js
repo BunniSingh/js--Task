@@ -1,5 +1,6 @@
 
-
+import {jokeKey} from "./secret.js"
+console.log(jokeKey);
 let resultContainer = document.getElementById('jokeContainer');
 async function getJoke(jokes) {
     try{
