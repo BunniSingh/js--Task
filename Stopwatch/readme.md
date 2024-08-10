@@ -9,10 +9,10 @@ The **Stopwatch Application** is a web-based tool built with HTML, CSS, and Java
 - **Responsive Design**: The application is fully responsive, making it accessible on various devices, from desktops to smartphones.
 
 ## Live Demo
-Check out the live version of the project: [Hosted Link](#)
+Check out the live version of the project: [Hosted Link](https://66b7c00118f5a5887787cc3f--singular-meringue-b19f4a.netlify.app/)
 
 ## Screenshot
-![Stopwatch Application Screenshot](screenshot.png)
+![Stopwatch Application Screenshot](./image.png)
 
 ## How It Works
 1. **Start**: Begin the stopwatch by clicking the start button.
@@ -27,4 +27,4 @@ Check out the live version of the project: [Hosted Link](#)
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stopwatch-app.git
+   https://github.com/BunniSingh/js--Task/tree/main/Stopwatch
