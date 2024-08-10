@@ -11,7 +11,7 @@
     align-items: center;
     height: 100vh;
     /* background-color: #b6a7a0; */
-    background: linear-gradient(to right, #b6a7a0 , #9ec6af);
+    background: linear-gradient(to right, #3a6d58 , #252512);
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
@@ -22,14 +22,13 @@ h1{
 }
 
 .stopwatch{
-    width: 30%;
-    min-width: 250px;
+    min-width: 33%;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     margin: 20px;
-    background-color: #fff;
+    background-color: #ffffff97;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -42,11 +41,22 @@ h1{
     }
 }
 
-#minutes, #seconds, #milliseconds{
+@media (max-width: 600px){
+    .stopwatch{
+        width: 82%;
+        min-width: 350px;
+        margin: 2rem 0;
+    }
+}
+
+#hour,#minutes, #seconds, #milliseconds{
+    width: 70px;
     font-size: 48px;
     font-weight: bold;
     margin: 0 10px;
+    padding: 10px;
 }
+
 .btn-box{
     /* width: 35%; */
     min-width: 250px;
@@ -56,11 +66,19 @@ h1{
     gap: 15px;
     
 }
+#start{
+    background-color: #2ecc71;
+}
+#stop{
+    background-color: #e74c3c;
+}
+#reset{
+    background-color: #f1c40f;
+}
 button{
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 18px;
-    background-color: #fe0a20;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -68,8 +86,10 @@ button{
     margin-top: 20px;
     transform: scale(1);
     transition: all 0.3s ease-in-out;
-    &:hover{
-        background-color: #77141c;
-        transform: scale(1.05);
-    }
+    
 }
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgb(135, 135, 135);
+}
+
