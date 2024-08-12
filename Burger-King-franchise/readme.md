@@ -20,10 +20,10 @@ This project is a dynamic web application that simulates a simple order system f
 3. **View Order Details:** The order number and a confirmation message will appear, along with images of the selected items.
 
 ## Hosted Link
-Check out the live project here: [Hosted Link](#)
+Check out the live project here: [Hosted Link](https://66b9d48b04f2f54b65435828--astounding-fairy-fd5a01.netlify.app/)
 
 ## GitHub Repository
-Explore the code on GitHub: [GitHub Link](#)
+Explore the code on GitHub: [GitHub Link](https://github.com/BunniSingh/js--Task/tree/main/Burger-King-franchise)
 
 ## Mentors
 This project was made possible with the guidance of:
