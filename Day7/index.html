@@ -3,21 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy Text on Click</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Custom Checkbox</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.custom-checkbox:hover input ~ .checkmark {
+    background-color: #b3b3b3;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #4caf50;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+    </style>
 </head>
 <body>
-    <div class="box" id="box1">Text to Copy 1</div>
-    <div class="box" id="box2">Text to Copy 2</div>
-    <div class="box" id="box3">Text to Copy 3</div>
 
-    <!-- Notification Pop-up -->
-    <div id="notification" class="notification hidden">
-        <span id="notification-text"></span>
-        <i class="fas fa-check-circle"></i>
-    </div>
+    <label class="custom-checkbox">
+        <input type="checkbox" id="checkbox1">
+        <span class="checkmark"></span>
+        Option 1
+    </label>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="script.js"></script>
+    <label class="custom-checkbox">
+        <input type="checkbox" id="checkbox2">
+        <span class="checkmark"></span>
+        Option 2
+    </label>
+
 </body>
 </html>
