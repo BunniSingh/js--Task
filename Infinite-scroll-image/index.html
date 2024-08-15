@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scroll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: "Pacifico", cursive;
+            text-align: center;
+            padding: 2rem;
+            padding-bottom: 1rem;
+            font-size: 2.4rem;
+            color: darkred;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+            letter-spacing: 2px;
+
+        }
+
+        #container {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            padding: 1.5rem;
+
+            img {
+                border-radius: 5px;
+                width: 40%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Scroll Infinite Images</h1>
+    <div id="container"></div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

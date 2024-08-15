@@ -15,14 +15,14 @@ The **Image Search** project is a dynamic web application that allows users to s
 - **JavaScript**: Logic for fetching and displaying images from the API.
 
 ## How to Use
-1. **Clone the repository**: `git clone [GitHub repository link]`
+1. **Clone the repository**: `git clone [https://github.com/BunniSingh/js--Task/tree/main/Search-Image-Project]`
 2. **Open `index.html`** in your browser.
 3. **Type in a search query** in the input box and press Enter or click the search button.
 4. **View the images** that are dynamically displayed based on your search.
 
 ## Project Links
-- **Hosted Version**: [Hosted project link]
-- **GitHub Repository**: [GitHub repository link]
+- **Hosted Version**: [Hosted Link](https://bunny-js-task.netlify.app/search-image-project/)
+- **GitHub Repository**: [GitHub repository link](https://github.com/BunniSingh/js--Task/tree/main/Search-Image-Project)
 
 ## Acknowledgments
 This project was developed as part of the tasks provided by **Geekster**. Special thanks to my mentors **Akhil Sharma** and **Drumil Akhenia** for their guidance and support.
