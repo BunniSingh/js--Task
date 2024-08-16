@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-save</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./logo.png" alt="Logo">
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="login">
+            <a href="#">LogIn</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h1>Auto save Textarea</h1>
+            <div class="update-instruction">
+                <p class="first">Write about your self👇</p>
+                <p class="first" id="status" style="display: none;"><i class="fa-solid fa-file-export"></i>    Saving<span class="dott">...</span></p>
+            </div>
+            <textarea name="text" id="text"></textarea>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
