@@ -3,6 +3,9 @@
 ## Project Overview
 This project, titled **"Auto Save Textarea"**, is designed to auto-save the user's input in a textarea field, ensuring that no data is lost even if the user navigates away from the page. Built using HTML, CSS, and JavaScript, this project also includes features such as order number generation and a waiting feature for an enhanced user experience.
 
+
+[Hosted Link](https://bunny-js-task.netlify.app/local-storage/)
+
 ## Features
 - **Auto-Save Functionality**: Automatically saves the content typed in the textarea.
 - **Order Number Generation**: Provides a unique order number for each session.
@@ -21,4 +24,4 @@ This project, titled **"Auto Save Textarea"**, is designed to auto-save the user
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone [GitHub Link]
+   git clone [https://github.com/BunniSingh/js--Task/tree/main/local-storage]

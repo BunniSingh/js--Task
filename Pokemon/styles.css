@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    background-color: #191f43;
+    /* color: white; */
+    /* background-image: url("https://c4.wallpaperflare.com/wallpaper/677/922/425/pokemon-pokemon-red-and-blue-blastoise-pokemon-bulbasaur-pokemon-wallpaper-preview.jpg"); */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.heading{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 40%;
+        height: auto;
+    }
+}
+
+
+.links{
+    display: flex;
+    justify-content: center;
+    color: #ceb802;
+    a:hover{
+        color: #ceb802;
+        transition: color 0.3s ease;
+    }
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid  #ccc; */
+
+}
+
+.getPokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap : 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #ceb802;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px  rgba(250, 250, 250, 0.648);
+    border: 5px solid #4848ffd9;
+    #selectType{
+        /* width: 30%; */
+        min-width: 160px;
+        padding: 0.5rem;
+        /* margin-bottom: 1rem; */
+        background-color: #1c2554bd;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #fff;
+    }
+    button{
+        min-width: 160px;
+        padding: 0.5rem 1rem;
+        background-color: #1c2554;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+            background-color: #0f29c1;
+        }
+    }
+
+
+    input{
+        /* width: 30%; */
+        min-width: 160px;
+        padding: 0.5rem;
+        /* margin-bottom: 1rem; */
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+}    
+
+#pokemonContainer{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+/* ============================================= */
+
+body {
+    
+}
+
+
+body::-webkit-scrollbar {
+    background-color:rgb(6, 40, 126);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:rgb(92, 89, 133);
+    border-radius: 5px;
+    height: 1.5rem;
+}
+
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.head-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.head-cont a {
+    height: 6rem;
+    width: 7rem;
+}
+
+.inp-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inp-first button{
+    margin-left: 0.8rem;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+.inp-first select {
+    background-color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    /* width: 7rem; */
+    padding: 0 0.5rem;
+    color: white;
+}
+
+option {
+    color: white;
+}
+
+.inp-second input{
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.inp-second input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+/* .pokemon-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    margin-top: 3rem;
+} */
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle at 50% 0%, rgb(0, 184, 148) 36%, rgb(255, 255, 255) 36%);
+    width: 10rem;
+    height: 18rem;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    transform-style: preserve-3d;
+    perspective: 1000;
+    background-color: transparent;
+    width: 11.5rem;
+    height: 18rem;
+    transition: transform 1s ease-in-out;
+    box-shadow: 0 0 10px rebeccapurple;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    transition: transform 1s ease;
+}
+
+.card-front {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-inline: 1rem;
+    transition: transform 1s;
+}
+
+.pok-type span {
+    margin-right: 1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+}
+
+.card-back .back-info {
+    margin-top: 1.5rem;
+}
+
+.card-front .abilities {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.ab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.type {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.head {
+    color:rgb(116, 115, 112)
+}
+
+.card-back img {
+    width: 159px;
+    height: 150px;
+}
+
+.card-back h2 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.card-back p {
+    font-size: 1.2rem;
+    color: rgb(116, 115, 112);
+}

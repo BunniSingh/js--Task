@@ -7,18 +7,20 @@ let cityH = document.getElementById('city');
 let villageH = document.getElementById('village');
 
 let userObj = JSON.parse(localStorage.getItem('userDetails'));
-if(userObj){
-    fNameH.innerText = userObj.firstName;
-    lNameH.innerText = userObj.lastName;
-    countryH.innerText = userObj.country;
-    phoneNumberH.innerText = userObj.phoneNumber;
-    stateH.innerText = userObj.state;
-    cityH.innerText = userObj.city;
-    villageH.innerText = userObj.village;
-}else{
-    alert('No saved details found. Please enter your details.');
-    getDetails();
-}
+window.addEventListener('load', () => {
+    if(userObj){
+        fNameH.innerText = userObj.firstName;
+        lNameH.innerText = userObj.lastName;
+        countryH.innerText = userObj.country;
+        phoneNumberH.innerText = userObj.phoneNumber;
+        stateH.innerText = userObj.state;
+        cityH.innerText = userObj.city;
+        villageH.innerText = userObj.village;
+    }else{
+        alert('No saved details found. Please enter your details.');
+        getDetails();
+    }
+})
 
 function getDetails(){
     let firstName = prompt('Enter your first name');
