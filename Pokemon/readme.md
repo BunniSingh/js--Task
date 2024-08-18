@@ -1,39 +1,27 @@
-# Auto Save Textarea
+# Pokemon Cards Project 🎴
 
 ## Overview
-The **Auto Save Textarea** project is a web-based application developed using HTML, CSS, and JavaScript. This application allows users to automatically save their inputs in a textarea, categorized by type, with additional functionalities such as search, API integration, and interactive features like flip cards and videos.
+The **Pokemon Cards** project is a dynamic web application built using HTML, CSS, and JavaScript. It allows users to browse through various Pokemon cards, filtered by type, and provides detailed information retrieved from the Pokemon API.
 
-## Features
-- **Category-wise Selection:** Organize text inputs by selecting categories.
-- **Search Functionality:** Quickly search through saved inputs.
-- **API Integration:** Displays dynamic content fetched from external APIs.
-- **Video Embeds:** Allows embedding of videos within the application.
-- **Flip Cards:** Interactive flip cards enhance user experience.
-- **Reset Button:** Clear all inputs with a single click.
 
-## How to Use
-1. **Select Category:** Choose a category from the dropdown.
-2. **Input Text:** Start typing in the textarea; the content will be saved automatically.
-3. **Search:** Use the search bar to filter through saved content.
-4. **Interact with Cards:** Flip cards by clicking on them to reveal more information.
-5. **Reset:** Use the reset button to clear all saved data.
+[Pokemon Cards](https://bunny-js-task.netlify.app/pokemon/)
 
-## Technologies Used
-- **HTML5** for structuring the content.
-- **CSS3** for styling and enhancing the visual presentation.
-- **JavaScript** for adding functionality and handling API interactions.
+## Features 🌟
+- **Category-Wise Selection**: Users can filter Pokemon by their type.
+- **Search Functionality**: Search for specific Pokemon easily.
+- **API Integration**: Fetches real-time data from the Pokemon API for detailed insights.
+- **Interactive Flip Cards**: Engage with Pokemon cards that flip to show more details.
+- **Embedded Videos**: Watch Pokemon-related videos directly within the app.
+- **Reset Button**: Reset filters and searches with a single click.
+- **Additional Features**: Enhanced UI with order numbers, waiting features, and more.
 
-## Setup Instructions
-1. Clone the repository: `git clone [GitHub Link]`
-2. Open `index.html` in your browser.
-3. Start interacting with the application.
+## Technologies Used 🛠️
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6)**
+- **Pokemon API**
 
-## Live Demo
-Check out the live demo of the project [here](Hosted Link).
-
-## Acknowledgements
-Special thanks to my mentors **Akhil Sharma** and **Drumil Akhenia** for their guidance and support throughout this project.
-
-## License
-This project is licensed under the MIT License.
-
+## Getting Started 🚀
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/BunniSingh/js--Task/tree/main/Pokemon]
