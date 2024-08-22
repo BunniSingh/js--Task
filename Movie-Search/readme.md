@@ -27,7 +27,7 @@ Make sure you have a modern web browser installed.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/MoviesClub.git
+    git clone https://github.com/BunniSingh/js--Task/tree/main/Movie-Search
     ```
 2. Navigate to the project directory:
     ```bash
@@ -44,19 +44,16 @@ Make sure you have a modern web browser installed.
 ## 🌐 Live Demo
 
 Check out the live version of the project:
-- **Hosted Link:** [Add Hosted Link Here]
+- **Hosted Link:**  [Click here](https://bunny-js-task.netlify.app/movie-search/)
 
 ## 🧑‍💻 Authors
 
-- **[Your Name]** - *Initial work* - [Your GitHub Profile](https://github.com/yourusername)
+- **[Banti Kumar Singh]** - *Initial work* - [Click here](https://github.com/BunniSingh)
 
 ## 🎓 Acknowledgments
 
 This project was developed as part of a task provided by **Geekster**. Special thanks to my mentors **Akhil Sharma** and **Drumil Akhenia** for their invaluable guidance and support.
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ✨ Additional Features
 
