@@ -4,7 +4,7 @@
 
 **HotGadgets** is a sleek and modern web application designed to display the latest gadgets. This project leverages **HTML**, **CSS**, and **JavaScript** to create an engaging and responsive user experience. Users can easily search for gadgets, load more items dynamically, and enjoy a smooth browsing experience.
 
-[Hosted Link](https://github.com/)
+[Hosted Link](https://bunny-js-task.netlify.app/weeklytest-4/)
 
 ## Features
 
@@ -37,4 +37,4 @@ To run this project locally, you’ll need:
 1. **Clone the repository**  
    Clone the project repository to your local machine using the following command:
    ```bash
-   git clone [Your GitHub Repository Link Here]
+   git clone [https://github.com/BunniSingh/js--Task/tree/main/WeeklyTest-4]

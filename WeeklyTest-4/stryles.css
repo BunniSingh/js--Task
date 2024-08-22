@@ -198,6 +198,13 @@ main{
         max-width: 600px;
         color: #1f2937;
         /* overflow: auto; */
+        transform: scale(1);
+        transition: transform 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+            background-color: black;
+        }
+
         h2{
             font-size: 2rem;
             font-weight: bold;
@@ -218,6 +225,7 @@ main{
         }
     }
 }
+
 
 
 

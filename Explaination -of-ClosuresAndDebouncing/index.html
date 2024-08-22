@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-title {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .card-description {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .card-button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .card-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Closures and Debouncing</h1>
+
+    <input type="text" name="search" id="search">
+    <br>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+
+
+    <div class="card">
+        <div class="card-image">
+            <img src="https://via.placeholder.com/300x200" alt="Card Image">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-description">
+                This is a brief description of the card content. It gives a quick overview of what the card is about.
+            </p>
+            <a href="#" class="card-button">Read More</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

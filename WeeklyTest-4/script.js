@@ -9,9 +9,7 @@ async function getPhones() {
 }
 
 async function getDetails(id) {
-  const res = await fetch(
-    `https://openapi.programming-hero.com/api/phone/${id}`
-  );
+  const res = await fetch(`https://openapi.programming-hero.com/api/phone/${id}`);
   let data = await res.json();
   showDetailsUI(data.data);
 }

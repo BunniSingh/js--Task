@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies-Club</title>
+    <link rel="stylesheet" href="stryle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="logo">
+                    <h1>MoviesClub<span class="color">.Com</span></h1>
+                </div>
+                <div class="search-container">
+                    <input id="search-input" type="text" placeholder="Search...">
+                    <button id="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="user-account">
+                    <button id="login">LogIn</button>
+                    <button id="signup">Sing Up</button>
+                </div>
+            </div>
+        </nav>
+        <div class="collections-categorys">
+            <div class="smallScreen-type">
+                <i class="fa-solid fa-bars"></i>
+                <span>Type of Collections</span>
+            </div>
+            <ul class="type">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Hindi Movies</a></li>
+                <li><a href="#">Dual Audio</a></li>
+                <li><a href="#">Epic Collection</a></li>
+                <li><a href="#">Hindi Dubbed</a></li>
+                <li><a href="#">Web Series</a></li>
+                <li><a href="#">How to Download</a></li>
+                <li><a href="#">Report Dead Link</a></li>
+                <li><a href="#">Bollybood</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="letest">
+            <i class="fa-solid fa-list-ul"></i>
+            Latest Movies
+        </div>
+        <div id="movies-container" class="animate__animated animate__fadeInDown"></div>
+        <div style="display: none;" id="movies-details-container" class="animate__animated animate__zoomIn"></div>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <p>
+                <a href="#">MoviesClub.com</a>
+                Copyright © 2023 MoviesClub all rights reserved
+            </p>
+            <p>Disclaimer: MoviesClub does not host any files on its servers.All point to content hosted on third-party websites.</p>
+            <p>MoviesClub does not accept responsibility for content hosted on third-party websites and does not have any involvement in the same.</p>
+
+            <p class="foot-links">
+                |<a href="#">DMCA</a>|
+                <a href="#">Privacy Policy</a>|
+                <a href="#">Contact Us</a>|
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
