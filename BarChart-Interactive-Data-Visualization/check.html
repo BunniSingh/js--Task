@@ -1,45 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
 
-        canvas{
-            max-width: 1000px;
-            max-height: 500px;
-        }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: green;
+    }
+    div{
+      width: 80%;
+      background-color: azure;
+      border-radius: 10px;
+      margin: 10px auto;
+      h1{
+        /* color: white; */
+        text-align: center;
+        padding: 10px;
+      }
+    }
+    canvas {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
+
 <body>
-    <div>
-        <canvas id="myChart"></canvas>
-      </div>
-      
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      
-      <script>
-        const ctx = document.getElementById('myChart');
-      
-        new Chart(ctx, {
-          type: 'pie',
-          data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
-              borderWidth: 1
-            }]
+  <div>
+    <h1>Real-Time Chart</h1>
+    <canvas id="realTimeChart"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('realTimeChart').getContext('2d');
+
+    let label = [];
+    let data = [];
+
+    let chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: label,
+        datasets: [{
+          label: '# of Votes',
+          data: data ,
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          fill: true,
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            
           },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-        });
-      </script>
+          x: {
+            autoSkip: true,
+            maxRotation: 90,
+            minRotation: 90
+          },
+        },
+        animations: {
+        duration: 1000,
+        easing: 'linear',
+      }
+    }
+    });
+
+
+    function addData(){
+      label.push(new Date().toLocaleTimeString());
+      data.push(Math.floor(Math.random() * 100) + 1);
+      chart.update();
+    }
+
+    setInterval(addData, 1000); // Update every second
+  </script>
+
 </body>
+
 </html>
