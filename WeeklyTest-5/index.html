@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="./favicon/apple-touch-icon.png" alt="logo">
+            <h1>Book</h1>
+        </div>
+        <div class="box">
+            <div class="dark-light-mode">
+                <div class="circle "></div>
+            </div>
+
+            <div class="account">
+                <a href="#">
+                    <span>Sign Up</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <!-- <div class="user-name">
+                    <span>User Name</span>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="left-container">
+            <li value="All categories">All categories</li>
+        </div>
+        <div class="right-container">
+            <h1 class="best-sell-heading">
+                Best Sellers
+                <span class="sort-icon">
+                    Books<i class="fa-solid fa-sort-amount-up"></i>
+                </span>
+            </h1>
+            <div class="book-type-container">
+
+                <!-- Book cards -->
+            </div>
+            <div class="book-details-container animate__animated animate__fadeIn" style="display: none;"></div>
+        </div>
+    </div>
+
+
+    <!-- <div class="book-img">
+        <img src="${book.book_image}" alt="book-cover">
+    </div>
+    <div class="book-info">
+        <div class="heading">
+           <h2>${book.title}</h2>
+           <p>${book.author}</p>
+        </div>
+        <div class="buy-links">
+            <a href="${book.buy_links[0].url}" target="_blank">
+               <img src="./favicon/amazon-2x.png" alt="amazone">
+            </a>
+            <a href="${book.buy_links[1].url}" target="_blank">
+               <img src="./favicon/book-shop-2x.png" alt="shop-icon">
+            </a>
+            <a href="${book.buy_links[2].url}" target="_blank">
+               <img src="./favicon/apple-books-2x.png" alt="shop-icon">
+            </a>
+        </div>
+        <button class="closebtn" onclick="closeFun()"></button>
+    </div> -->
+    
+    <script src="./script.js"></script>
+</body>
+</html>

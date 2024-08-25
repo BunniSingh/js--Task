@@ -25,7 +25,6 @@ circle.addEventListener('click', function(e){
         messege.textContent = 'Dark Mode OFF';
         circle.classList.remove("moveRight");
         circle.classList.add("moveLeft");
-        
     }
  }
 
