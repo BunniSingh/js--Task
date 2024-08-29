@@ -48,7 +48,13 @@ nav{
     }
 }
 
-
+#loder{
+    img{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+}
 
 /* footer/////////////// */
 
@@ -61,6 +67,11 @@ footer{
     align-items: center;
     justify-content: space-between;
 
+    a{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
     img{
         width: 30px;
         height: 30px;

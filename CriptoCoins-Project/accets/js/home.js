@@ -6,6 +6,7 @@ async function getDataFromApi(){
         let response = await fetch("https://api.coingecko.com/api/v3/search/trending");
         let data = await response.json();
         displayCards(data.coins);
+        // console.log(data);
     } catch (error) {
         console.error(error);
     }
@@ -25,4 +26,11 @@ function displayCards(data){
             </div>
         `
     })
+
+    let cards = document.querySelectorAll('.card');
+    cards.forEach((card, index) => {
+        card.addEventListener('click', () => {
+            window.location.href = `details.html?id=${data[index].item.id}`
+        });
+    });
 }
