@@ -19,6 +19,17 @@ document.querySelector('.dark-light-mode').addEventListener('click', function(){
 
 let leftContainer = document.querySelector('.left-container');
 
+leftContainer.addEventListener('click', (ele) => {
+    let bookTypeContainer = document.querySelector('.book-type-container');
+    bookTypeContainer.innerHTML = '';
+
+    if(ele.target.getAttribute('value') === 'All categorie'){
+        // getBooks();
+        console.log(ele.target.getAttribute('value'));
+    }
+    
+})
+
 async function getCotigorylist(){
     let response = await fetch('https://books-backend.p.goit.global/books/category-list');
     let data = await response.json();
@@ -40,9 +51,6 @@ function closeFun(){
 
 
 let bookTypeContainer = document.querySelector('.book-type-container');
-
-
-
 function showBookDetails(book){
     // console.log(book);
     let bookDetailsContainer = document.querySelector('.book-details-container');
