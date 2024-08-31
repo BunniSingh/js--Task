@@ -2,7 +2,7 @@
 
 .main-section{
     background-color: #e5e5e5;
-    padding: 2rem;
+    padding: 1rem 2rem;
     display: flex;
 
 
@@ -17,6 +17,8 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-left: 1rem;
+            margin-bottom: 10px;
+            color: rgb(0 111 133);
         }
         p{
             font-size: 1.2rem;

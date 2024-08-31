@@ -19,16 +19,7 @@ document.querySelector('.dark-light-mode').addEventListener('click', function(){
 
 let leftContainer = document.querySelector('.left-container');
 
-leftContainer.addEventListener('click', (ele) => {
-    let bookTypeContainer = document.querySelector('.book-type-container');
-    bookTypeContainer.innerHTML = '';
-
-    if(ele.target.getAttribute('value') === 'All categorie'){
-        // getBooks();
-        console.log(ele.target.getAttribute('value'));
-    }
     
-})
 
 async function getCotigorylist(){
     let response = await fetch('https://books-backend.p.goit.global/books/category-list');
@@ -92,14 +83,9 @@ function showBookDetails(book){
 }
 
 async function getBooks(){
-    let checked;
-    leftContainer.addEventListener('click', function(event){
-        checked = event.target.getAttribute('value');
-        console.log(checked);
-    });
     let response = await fetch(`https://books-backend.p.goit.global/books/top-books`);
     let data = await response.json();
-    console.log(data);
+    bookTypeContainer.innerHTML = "";
     data.forEach((ele) =>{
         let bookContainer = document.createElement('div');
         bookContainer.className = 'book-container';
@@ -129,12 +115,62 @@ async function getBooks(){
 
             })
         });
+        let div = document.createElement('div');
+        div.className = 'load-more';
         let button = document.createElement('button');
             button.innerText = 'Show More';
+            div.appendChild(button);
+
             bookTypeContainer.appendChild(bookContainer);
-            bookTypeContainer.appendChild(button);
+            bookTypeContainer.appendChild(div);
     })
-    // console.log(bookTypeContainer);
 }
 
 getBooks();
+
+
+
+// get Books by categorys 
+async function getBooksByCategory(category){
+    let response = await fetch(`https://books-backend.p.goit.global/books/top-books`);
+    let data = await response.json();
+    console.log(data);
+    bookTypeContainer.innerHTML = "";
+    let bookContainer = document.createElement('div');
+    data.forEach((booksCategoryName)=>{
+        if(booksCategoryName.list_name === category){
+            booksCategoryName.books.forEach(book =>{
+                let bookDiv = document.createElement('div');
+                bookDiv.className = 'book-div';
+                let bookImg = document.createElement('img');
+                bookImg.src = book.book_image;
+                let bookTitle = document.createElement('h3');
+                bookTitle.innerText = book.title;
+                let bookAuthor = document.createElement('p');
+                bookAuthor.innerText = book.author;
+                bookDiv.appendChild(bookImg);
+                bookDiv.appendChild(bookTitle);
+                bookDiv.appendChild(bookAuthor);
+                bookContainer.appendChild(bookDiv);
+
+                bookDiv.addEventListener('click', function(){
+                    // console.log(book);
+                    showBookDetails(book);
+                })
+            })
+            bookTypeContainer.appendChild(bookContainer);
+        }
+    })
+    
+}
+
+leftContainer.addEventListener('click', function(event){
+    let checked = event.target.getAttribute('value');
+    if(checked === 'All categories'){
+        getBooks();
+        console.log('you clicked all categories');
+    }else{
+        console.log('you clicked other categories');
+        getBooksByCategory(checked);
+    }
+});
