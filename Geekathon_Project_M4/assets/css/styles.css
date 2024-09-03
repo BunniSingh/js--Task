@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 h1{
-    color: rgb(243, 4, 4);
+    color: rgb(84, 74, 95);
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -16,7 +16,7 @@ h1{
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
-    background-color: lightblue;
+    background-color: #fdffff;
     padding: 1rem;
 
     .input-box{
@@ -103,7 +103,35 @@ h1{
         width: 80%;
         margin: auto;
         text-align: justify;
-        color: rgb(101, 1, 1);
+        color: rgb(39, 0, 0);
         font-size: 1.2rem;
+
+    }
+    .result{
+        margin: 2rem 0;
+
+        h3{
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            a{
+                text-decoration: none;
+                color: rgb(24, 0, 179);
+            }
+        }
+
+        .displayed_url{
+            margin-bottom: 5px;
+            color: #4cc952;
+        }
+        .domain{
+            text-decoration: none;
+            color: #888;
+            font-weight: bold;
+            font-size: 0.95rem;
+            margin-top: 5px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
 }
