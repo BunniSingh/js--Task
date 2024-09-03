@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(243, 4, 4);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: lightblue;
+    padding: 1rem;
+
+    .input-box{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        align-items: center;
+        #searchInput{
+
+            width: 15rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            &:focus{
+                background-color: #ddd;
+            }
+            &:placeholder{
+                color: #ccc;
+            }
+            &:invalid{
+                border-color: red;
+            }
+            &:valid{
+                border-color: green;
+            }
+            &:disabled{
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+            &.error{
+                border-color: red;
+            }
+            &.success{
+                border-color: green;
+            }
+            &.loading{
+                background-color: #ccc;
+                cursor: wait;
+            }
+            &.disabled-error{
+                border-color: red;
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+            &.disabled-success{
+                border-color: green;
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+            &.disabled-loading{
+                background-color: #ccc;
+                cursor: wait;
+            }
+            &.disabled-disabled{
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+            &.disabled-error:focus,
+            &.disabled-success:focus,
+            &.disabled-loading:focus,
+            &.disabled-disabled:focus{
+                background-color: #ccc;
+                cursor: not-allowed;
+            }   
+        }
+        #searchBtn{
+            padding:0.6rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: #4CAF50;
+            color: #fff;
+            &:hover{
+                background-color: #45a049;
+            }
+        }
+    }
+
+    #searchResults{
+        width: 80%;
+        margin: auto;
+        text-align: justify;
+        color: rgb(101, 1, 1);
+        font-size: 1.2rem;
+    }
+}

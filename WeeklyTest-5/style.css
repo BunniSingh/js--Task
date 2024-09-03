@@ -100,7 +100,7 @@ a {
 
     .left-container{
         width: 35%;
-        height: 400px;
+        height: 500px;
         /* background-color: #fff; */
         border-radius: 10px;
         overflow: auto;
@@ -130,7 +130,7 @@ a {
     }
 
     .left-container::-webkit-scrollbar {
-        width: 12px; /* Width of the entire scrollbar */
+        width: 10px; /* Width of the entire scrollbar */
     }
 
     .left-container::-webkit-scrollbar-track {
@@ -139,7 +139,7 @@ a {
     }
 
     .left-container::-webkit-scrollbar-thumb {
-        background-color: #888; /* Color of the scrollbar thumb */
+        background-color: #cecdcd; /* Color of the scrollbar thumb */
         border-radius: 10px; /* Rounded corners */
         border: 3px solid #fdfafa; /* Padding around thumb */
     }
@@ -327,4 +327,12 @@ a {
         transform: translateX(0px);
         background-color: #fff;
     }
+}
+
+.foot{
+    background-color: #282710;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
 }
