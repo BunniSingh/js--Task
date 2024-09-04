@@ -21,11 +21,12 @@ h1{
 
     .input-box{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 1rem;
         margin-bottom: 1rem;
         align-items: center;
         #searchInput{
-
             width: 15rem;
             padding: 0.5rem;
             border: 1px solid #ccc;
