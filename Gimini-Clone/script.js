@@ -40,9 +40,8 @@ async function searchGimini() {
         const response = await result.response;
         console.log(response);
         const text = response.text();
-        console.log(text);
-        let message = `<p><span>Bot: </span> ${text}</p>`;
-        results.innerHTML = message;
+        console.log(typeof text);
+        results.innerText = text.replaceAll('*', '');;
         input_field.value = '';
     } catch (error) {
         let errResponse = error;

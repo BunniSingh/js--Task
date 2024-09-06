@@ -3,22 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Search</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="./accets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
-<body>
-    <div class="container">
-        <h1 class="heading">Google Search</h1>
-        <div class="input-box">
-            <input type="text" id="searchInput" placeholder="Search for anything...">
-            <button id="searchBtn">Search</button>
+<body class="animate__animated animate__fadeIn">
+    <div class="nav-icons">
+        <div>
+            <img src="./accets/google.png" alt="google-logo" class="logo">
         </div>
-        <div id="searchResults">
-        Qui facere aspernatur sint aliquid distinctio in impedit deleniti culpa quia cum nemo, voluptates quisquam eaque eius, numquam rerum laborum consequuntur quae sit ea velit suscipit soluta hic. Illum, assumenda?
-        
-        </div> 
+        <div class="icon">
+            <span>Gmail</span>
+            <span>Image</span>
+            <span><i class="fa-solid fa-flask"></i></span>
+            <img src="./accets/apps_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="apps-icon">
+            <img class="user" src="./accets/user.png" alt="user-icon">
+        </div>
     </div>
+    <div class="container">
+        <div class="heading">
+            <span class="blue">S</span>
+            <span class="red">E</span>
+            <span class="yellow">A</span>
+            <span class="blue">R</span>
+            <span class="green">C</span>
+            <span class="red">H</span>
+        </div>
+        <div class="input-form">
+            <select id="options">
+                <option value="gemini">Gemini</option>
+                <option value="google">Google</option>
+                <option value="wikipedia"></i>Wikipedia</option>
+            </select>
+            <form id="form" action="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" autocomplete="off" id="searchInput" placeholder="Search here...">
+                <button type="submit" id="searchButton">Search</button>
+            </form>
+        </div>
 
-    <script src="./assets/js/sctipt.js"></script>
+        <div class="loading-indicator">
+            <div class="sk-chase js-spinner hidden">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
+          </div>
+
+        <div class="animate__animated" id="result-container"></div>
+    </div>
+    
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+    <script type="module" src="./accets/script.js"></script>
 </body>
 </html>
