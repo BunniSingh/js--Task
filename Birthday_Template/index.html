@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="thank-you-container">
+        <h1 class="animated-text">🎉 <span>Happy Birthday</span> 🎉</h1>
+        <p>🌞For Bhosriwala gandu ke liye😅👇</p>
+        <p>Happy Birthday, Akash! 🎉 To my best friend who knows me better than anyone and still chooses to be by my side—thank you for being my rock, my go-to, and my constant source of laughter. We’ve shared so many unforgettable memories, and I’m so grateful for every single one of them. Here’s to many more adventures, late-night talks, and moments of pure joy. May this year bring you all the happiness, success, and love you deserve. 🎂🎈 Cheers to the best friend anyone could ask for! Let’s make this birthday unforgettable!</p>
+        <p>Let’s keep the party going with some good music and memories that will last forever! 🥳</p>
+        <p>From : - Banti Singh (AnniBunny)</p>
+        <button onclick="playMusic()">Play Party Music 🎶</button>
+        <button onclick="stopMusic()">Stop Music ✋</button>
+        
+        <div class="social-icons">
+            <a href="https://www.instagram.com/bunny0singh/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/banti-kr-singh/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/BunniSingh" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="party-lights">
+        <div class="light light1"></div>
+        <div class="light light2"></div>
+        <div class="light light3"></div>
+    </div>
+
+    <audio id="party-music" src="your-party-music.mp3" onplaying="startFlashes()" onpause="stopFlashes()"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

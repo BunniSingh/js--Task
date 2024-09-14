@@ -128,4 +128,3 @@ searchInput.addEventListener("input", () => {
 getMovies();
 let throttledGetMovies = throttle(getMovies, 2000);
 searchBtn.addEventListener("click", throttledGetMovies);
-// searchBtn.addEventListener('click', getMovies);
