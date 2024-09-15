@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="./logo.png" alt="logo-img">
+        </div>
+        <div class="hemburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1>Random Password Generator</h1>
+        <p>Generate a secure password with customizable length, character types, and symbols.</p>
+        <div class="main-sub">
+            <div class="controls">
+                <p>Select Password length <span>(**8-30 characters**)</span></p>
+                <label for="length">Password Length:</label>
+                <input type="number" id="length" min="8" max="30" value="8">
+            </div>
+            <div class="check-control">
+                <div>
+                    <input type="checkbox" id="include-uppercase" checked>
+                    <label for="include-uppercase">Include uppercase letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="include-lowercase" checked>
+                    <label for="include-lowercase">Include lowercase letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="include-numbers" checked>
+                    <label for="include-numbers">Include numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="include-symbols" checked>
+                    <label for="include-symbols">Include symbols</label>
+                </div>
+            </div>
+            <button onclick="generatePassword()">Generate Password</button>
+            <div class="result">
+                 <p id="password"></p>
+                <button id="copy"><i class="fa-regular fa-copy" onclick="copyPassword()"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2023 Random Password Generator. All rights reserved.</p>
+        <div class="social">
+            <a href="https://x.com/BANTIKUMAR80310"target = "_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/bunny0singh/"target = "_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/BunniSingh/"target = "_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
